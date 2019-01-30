@@ -62,7 +62,7 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="{% url 'formulario' %}">Cadastrar Cliente</a>
+                    <li><a href="{% url 'cadastrar' %}">Cadastrar Cliente</a>
                     </li>
                     <li><a href="{% url 'login' %}">Login</a>
                     </li>
@@ -190,7 +190,7 @@
             <div class="title_right">
               <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
         
-                  <a class="nav-item btn btn-primary" href="{% url 'formulario' %}" type="button">Cadastrar</a>
+                  <a class="nav-item btn btn-primary" href="{% url 'cadastrar' %}" type="button">Cadastrar</a>
                   <a class="nav-item btn btn-primary" href="{% url 'login' %}" type="button">Login</a>
             {% endblock %}
 

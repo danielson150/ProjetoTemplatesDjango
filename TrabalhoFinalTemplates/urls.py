@@ -9,6 +9,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('login/', views.login, name='login'),
-    path('formulario/', views.formulario, name='formulario'),
+    path('cadastrar/', views.cadastrar, name='cadastrar'),
     path('listar_cadastro/', views.listar_cadastro, name='listar_cadastro'),
 ]
