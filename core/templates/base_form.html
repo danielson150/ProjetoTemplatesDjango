@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+ {% block cadastrar_login %}
+{% block content %}
+<div class="x_content">
+<br />
+                  <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome_completo">Nome Completo <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="nome_completo" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user">Usuário <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="user" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">Senha <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="password" id="password" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                      <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">Email <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="email" id="email" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Genêro</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div id="gender" class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                            <input type="radio" name="gender" value="male"> &nbsp; Masculino &nbsp;
+                          </label>
+                          <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                            <input type="radio" name="gender" value="female" checked=""> Feminino
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Date de Nascimento<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+{% endblock %}
+ {% endblock %}
